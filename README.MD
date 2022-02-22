@@ -1,7 +1,7 @@
 # mutant-go
 go project
 
-## 1. Configuración del entorno.
+### 1. Configuración del entorno.
 
 El proyecto usa las siguientes variables de entorno:
 
@@ -14,7 +14,17 @@ ALLOW_URL="http://localhost:4000;http://localhost:4001"
 DB_URL= // url de la DB con secretos
 ```
 
-### 2. Ejecución de tests.
+### 2. Iniciar API desde el host.
+
+Iniciar la aplicacion en modo desarrollo:
+
+```sh
+go run .
+```
+
+La aplicacion deberia iniciar en el puerto 4000 o cualquier otro indicado por el archivo .env
+
+### 3. Ejecución de tests.
 
 Para ejecutar los tests correr
 
@@ -22,7 +32,7 @@ Para ejecutar los tests correr
 $ go test ./... -cover
 ```
 
-### 3. End-points.
+### 4. End-points.
 GET http://{URL}/stats
 
 
@@ -40,3 +50,10 @@ payload
     ]
 }
 ```
+
+### 5. Diagrama de secuencia.
+<p align="center"><img src="imgs/mutant.png" width="80%"></p>
+<p align="center"><img src="imgs/stats.png" width="80%"></p>
+
+### 6. Diagrama de arquitectura.
+<p align="center"><img src="imgs/arquitectura.png" width="80%"></p>
