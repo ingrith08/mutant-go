@@ -10,7 +10,6 @@ El proyecto usa las siguientes variables de entorno:
 Ejemplo del archivo .env
 ```sh
 PORT=":4000"
-ALLOW_URL="http://localhost:4000;http://localhost:4001"
 DB_URL= // url de la DB con secretos
 ```
 
